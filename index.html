@@ -5,32 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <script href="index.js" refer></script>
+    <script src="index.js" refer></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap");
     </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
     <header>
       <nav>
         <div class="content__wrapper content__wrapper--links">
           <figure class="nav__logo">
-            <img src="assets\blinker-logo.png" />
+            <img src="assets\Personal Logo 2 Lion.png" />
           </figure>
           <ul class="nav__link--list">
             <li><a href="#" class="nav__link">Home</a></li>
-            <li><a href="#" class="nav__link">Find your car</a></li>
+            <li><a href="#" class="nav__link">Find your Movie</a></li>
             <li><a href="#" class="nav__link">Contact</a></li>
           </ul>
         </div>
         <div class="content__wrapper content__wrapper--search">
-          <h1 class="content__title">Browse our cars</h1>
+          <h1 class="content__title">Browse our Movies</h1>
           <div class="input__wrap">
-            <input type="text" placeholder="Search by Make, Model or Keyword" />
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input
+              type="text"
+              placeholder="Search by Make, Model or Keyword"
+              class="search__input"
+            />
+            <button class="search__btn" onclick="getData()">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
           </div>
         </div>
       </nav>
     </header>
+    <section class="section section__match">
+      <div class="filters">
+        
+      </div>
+      <div class="results">
+
+      </div>
+    </section>
   </body>
 </html>

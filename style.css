@@ -2,16 +2,24 @@
   font-family: roboto, sans-serif;
   list-style: none;
   text-decoration: none;
-  color: white;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* NAV */
+button {
+  cursor: pointer;
+}
+
+/* 
+
+NAV 
+
+*/
+
 header {
   position: relative;
-  background-image: linear-gradient(rgba(41, 0, 68, 0.5), rgba(0, 0, 0, 0.5)), url("assets/carpark.8742e246.jpeg");
+  background-image: url("assets/spider-man-movie.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -36,9 +44,11 @@ nav {
 }
 
 .nav__logo img {
-  max-width: 100%;
-  min-width: 100px;
-  min-height: 30px;
+  max-width: 60%;
+  min-width: 60px;
+  min-height: 60px;
+  border-radius: 9999px;
+  box-shadow: 10px 0 60px 0 white;
 }
 
 .content__wrapper--links {
@@ -63,6 +73,7 @@ nav {
   padding: 0 50px;
   font-size: 18px;
   font-weight: 600;
+  color: white;
 }
 
 .content__wrapper--search {
@@ -77,4 +88,33 @@ nav {
   font-size: 45px;
   font-weight: bolder;
   margin-bottom: 10px;
+  text-align: center;
+  color: white; 
+}
+
+.input__wrap {
+  position: relative;
+}
+
+.search__input {
+  width: 80vw;
+  max-width: 600px;
+  height: 15vh;
+  max-height: 60px;
+  padding: 0 20px;
+  border-radius: 9999px;
+}
+
+.search__btn {
+  width: 60px;
+  height: 60px;
+  color: blueviolet;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 20px;
+}
+
+.search__btn i {
+  font-size: 35px;
 }
