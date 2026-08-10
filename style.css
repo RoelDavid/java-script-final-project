@@ -20,8 +20,8 @@ NAV
 header {
   position: relative;
   background-image: url("assets/spider-man-movie.jpg");
-  background-attachment: fixed;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 nav {
@@ -117,4 +117,42 @@ nav {
 
 .search__btn i {
   font-size: 35px;
+}
+
+/*
+
+SECTION MOVIE MATCH 
+
+*/
+.results {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.movie__card {
+  width: 20%;
+  min-width: 250px;
+  height: 400px;
+  border: 2px solid black;
+  padding: 0 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: not-allowed;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.movie__info {
+  z-index: 2;
+  color: white;
 }
