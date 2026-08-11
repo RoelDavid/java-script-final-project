@@ -63,7 +63,7 @@ nav {
   justify-content: space-between;
 }
 
-.nav__link--list li{
+.nav__link--list li {
   display: flex;
   justify-content: center;
 }
@@ -71,7 +71,8 @@ nav {
 .nav__link {
   display: flex;
   align-items: center;
-  padding: 0 50px;
+  text-align: center;
+  padding: 0 20px;
   font-size: 18px;
   font-weight: 600;
   color: white;
@@ -90,7 +91,7 @@ nav {
   font-weight: bolder;
   margin-bottom: 10px;
   text-align: center;
-  color: white; 
+  color: white;
 }
 
 .input__wrap {
@@ -143,7 +144,7 @@ SECTION MOVIE MATCH
   min-width: 250px;
   height: 400px;
   border: 2px solid black;
-  
+
   margin: 0 auto;
   margin-top: 20px;
   border-radius: 20px;
@@ -176,4 +177,38 @@ SECTION MOVIE MATCH
 .movie__year {
   font-size: 16px;
   font-weight: bold;
+}
+
+/*
+
+SMALL DEVICES
+
+*/
+
+@media (max-width: 680px) {
+  .nav__link,
+  .nav__logo {
+    display: none;
+  }
+  .content__wrapper--search {
+    padding: 0;
+  }
+  .content__title {
+    font-size: 28px;
+  }
+  .search__input {
+  height: 40px;
+}
+.search__btn i {
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+}
+}
+
+@media (max-width: 440px) {
+  nav {
+    height: 200px;
+  }
 }
