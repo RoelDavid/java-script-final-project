@@ -103,7 +103,7 @@ nav {
   max-width: 600px;
   height: 15vh;
   max-height: 60px;
-  padding: 0 20px;
+  padding: 0 10px;
   border-radius: 9999px;
 }
 
@@ -114,11 +114,18 @@ nav {
   background: none;
   border: none;
   position: absolute;
-  right: 20px;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .search__btn i {
-  font-size: 35px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*
@@ -186,9 +193,14 @@ SMALL DEVICES
 */
 
 @media (max-width: 680px) {
-  .nav__link,
-  .nav__logo {
+  .nav__logo,
+  .nav__link--home,
+  .nav__link--movies {
     display: none;
+  }
+  .nav__link--contact {
+    position: absolute;
+    right: 20px;
   }
   .content__wrapper--search {
     padding: 0;
@@ -199,11 +211,9 @@ SMALL DEVICES
   .search__input {
   height: 40px;
 }
-.search__btn i {
-  font-size: 20px;
-  position: absolute;
-  left: 50%;
-  top: 20%;
+.search__btn {
+  width: 40px;
+  height: 40px;
 }
 }
 
