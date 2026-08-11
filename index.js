@@ -2,7 +2,7 @@ async function getData() {
   const searchInput = document.querySelector(".search__input");
   const searchValue = searchInput.value;
   const response = await fetch(
-    `http://www.omdbapi.com/?s=${searchValue}&apikey=87422d08`,
+    `https://www.omdbapi.com/?s=${searchValue}&apikey=87422d08`,
   );
   const data = await response.json();
 
