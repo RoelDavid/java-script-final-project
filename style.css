@@ -188,6 +188,29 @@ SECTION MOVIE MATCH
 
 /*
 
+FILTERS
+
+*/
+
+.filter__year {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.filter__year label{
+  text-align: center;
+  font-weight: bolder;
+}
+
+.choose__year {
+  padding: 0 10px;
+  text-align: center;
+}
+
+/*
+
 SMALL DEVICES
 
 */

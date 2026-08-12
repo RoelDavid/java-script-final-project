@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="index.js" refer></script>
+    <script src="index.js" defer></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap");
     </style>
@@ -23,8 +23,14 @@
           </figure>
           <ul class="nav__link--list">
             <li><a href="#" class="nav__link nav__link--home">Home</a></li>
-            <li><a href="#" class="nav__link nav__link--movies">Find your Movie</a></li>
-            <li><a href="#" class="nav__link nav__link--contact">Contact</a></li>
+            <li>
+              <a href="#" class="nav__link nav__link--movies"
+                >Find your Movie</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav__link nav__link--contact">Contact</a>
+            </li>
           </ul>
         </div>
         <div class="content__wrapper content__wrapper--search">
@@ -33,7 +39,8 @@
             <input
               type="text"
               placeholder="Search by Title or Keyword"
-              class="search__input" value="" 
+              class="search__input"
+              value=""
             />
             <button class="search__btn" onclick="getData()">
               <i class="fa-solid fa-magnifying-glass"></i>
@@ -43,8 +50,18 @@
       </nav>
     </header>
     <section class="section section__match">
-      <div class="results">
+      <div class="filters">
+        <div class="filter filter__year">
+          <label>Years</label>
+          <select class="choose__year" onchange="filterByYear()">
+            <option>2020 to today</option>
+            <option>2010 to 2019</option>
+            <option>2000 to 2009</option>
+            <option>past to 1999</option>
+          </select>
+        </div>
       </div>
+      <div class="results"></div>
     </section>
   </body>
 </html>
